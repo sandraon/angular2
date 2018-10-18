@@ -1,0 +1,51 @@
+body {
+    font-family: 'Lora', serif !important;
+}
+body h3 {
+    font-weight: bold;
+}
+
+header {
+    padding-top:20px;
+    border-bottom: 2px solid red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#logo {
+    width:60px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-weight: none;
+    font-size: 18px;
+}
+.nav-link:hover {
+    color:red !important;
+}
+
+.navbar-toggler {
+    color: red !important;
+}
+
+#content {
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+.first-content {
+    padding-bottom: 40px;
+}
+
+.second-content {
+    padding-top:30px;
+}
+
+.unstyled {
+    list-style: none;
+}
+
+
+

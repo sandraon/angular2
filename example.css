@@ -1,0 +1,58 @@
+#example {
+  padding: 0;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+#example li {
+  list-style: none;
+  display: inline-block;
+  padding: 5px 15px;
+  margin: 2px 0;
+  background: orange;
+  border-radius: 5px;
+}
+
+#example li a {
+  color: white;
+  text-decoration: none;
+}
+
+.example-container {
+  position: relative;
+  margin: 10px 20px;
+}
+
+.example-view {
+  padding: 10px;
+}
+
+.example-view.ng-animate {
+  transition: all ease 0.4s;
+  position: absolute;
+}
+
+.example-view.ng-enter {
+  top: 200px;
+  opacity: 0;
+}
+
+.example-view.ng-leave,
+.example-view.ng-enter.ng-enter-active {
+  top: 0;
+  opacity: 1;
+}
+
+.example-view.ng-leave.ng-leave-active {
+  top: -200px;
+  opacity: 0;
+}
+
+.example-picture {
+  border: 1px solid red;
+}
+
+#example-code {
+  padding-top: 20px;
+}

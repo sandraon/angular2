@@ -1,0 +1,87 @@
+<!--Github - https://github.com/sandraon/angular -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AngularJS õpperakendus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="angular.png"/>
+    <!--AngularJS-->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-route.js"></script>
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.css">
+    <!--Custom css & js-->
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
+    <script src="app.js"></script>
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+</head>
+<!--<ng-app ng-app="myApp">-->
+<body>
+    <div class="container">
+        <!--Header-->
+        <header>
+            <!--Navbar-->
+            <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
+                <a class="navbar-brand" href="index.html"><img id="logo" src="angular.png" alt="Angular.js" class="img-fluid">Angular.js õppekeskkond</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Avaleht</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="todo.html">ToDo list</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="example.html">Näited</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="resources.html">Õppematerjalid</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="game.html">Õppemäng</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="feedback.html">Tagasiside</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>    
+        </header>
+        
+        <!--Content-->
+        <section id="content">
+            <div ng-view></div>
+            <div class="first-content">
+                <h3 class="display-4">Anna tagasisidet</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputName">Nimi</label>
+                        <input type="text" class="form-control" id="exampleInputName" placeholder="Sisesta nimi" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail">E-posti aadress</label>
+                        <input type="email" class="form-control" id="exampleInputEmail" placeholder="E-posti aadress" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputMessage">Sinu sõnum</label>
+                        <textarea class="form-control" id="exampleInputMessage" placeholder="Sõnum"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Saada</button>
+                </form>
+            </div>
+            
+        </section>  
+    </div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</ng-app>
+</html>
